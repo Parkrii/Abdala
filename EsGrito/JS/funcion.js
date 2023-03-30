@@ -1,5 +1,6 @@
 function grito(m){
     let grito=0, letra=0;
+    let msg="";
     for(let i=0; i<m.length; i++){
     	if(m[i] == '!'){
     		grito++;
@@ -9,9 +10,10 @@ function grito(m){
     	}
     }
     if(grito>letra){
-    	return "ESGRITO";
+    	msg == "ESGRITO";
     }
     else{
-    	return "escrito";
+    	msg == "escrito";
     }
+    return msg;
 }
