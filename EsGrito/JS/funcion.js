@@ -10,10 +10,10 @@ function grito(m){
     	}
     }
     if(grito>letra){
-    	msg == "ESGRITO";
+    	msg = "ESGRITO";
     }
     else{
-    	msg == "escrito";
+    	msg = "escrito";
     }
     return msg;
 }
