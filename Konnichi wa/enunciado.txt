@@ -1,0 +1,7 @@
+Salida
+La salida consiste en n lineas siguiendo el formato “Konnichi wa, NOMuBuRE-san”, donde
+NOMuBuRE es la japonizacion del NOMBRE leido. Hay que respetar la capitalizacion del
+nombre leido, pero las letras ‘u’ que se a nadan deben ser siempre minusculas.
+Pista
+Por favor, escribid la salida correctamente (“Konnichi” empieza con mayuscula, detras de la
+coma hay un espacio, etc.), o el juez rechazar a vuestra solucion.
