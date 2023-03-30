@@ -1,0 +1,1 @@
+Por cada linea de la entrada, el programa escribira ESGRITO si el texto tiene mas signos de exclamacion que letras (del abecedario ingles), y escrito en caso contrario.
