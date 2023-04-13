@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+<body>
+    <script>
+        let n=0, array = [], num=0;
+        n=parseInt(prompt("Ingrese cuantos numeros va a ingresar"));
+      for(let i=0; i<n; i++){
+        num=parseInt(prompt("Ingrese un numero"));
+        array[i] = num;
+    }
+    document.write(ContarMultiplosDe2(array,n),": son los multiplo(s) de 2<br>",ContarMultiplosDe3(array,n),": son los multiplo(s) de 3<br>",ContarMultiplosDe4(array,n),": son los multiplo(s) de 4<br>",ContarMultiplosDe5(array,n),": son los multiplo(s) de 5<br>" );
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+Entrada
+La primera línea de entrada consiste de un entero N (1 = N =1000), que representa la
+cantidad de números en la lista de Bino.
+La segunda línea contiene N enteros Li (1 = Li = 100), que representan los números en la
+lista de Bino.
+Salida
+Mostrar la cantidad de múltiplos de 2, 3, 4 y 5 en la lista. Nótese que el formato de la salida
+mostrado en el ejemplo debe ser seguido estrictamente.
