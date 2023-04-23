@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+
+<body>
+    <script>
+        let N = 0, A = [], ca = 0, v = 0;
+        N = parseInt(prompt("Ingrese que tan grande va a ser el vector"));
+        for (let i = 0; i < N; i++) {
+            A[i] = parseInt(Math.random() * 600);
+        }
+
+        A.sort(function (A, b) {
+            return A - b;
+        });
+
+        document.write("El vector es:", A, "<br>El moda es:", Moda(A));
+    </script>
+</body>
+
+</html>
