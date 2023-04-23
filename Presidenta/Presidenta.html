@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+
+<body>
+    <script>
+        let n1 = 0, n2 = 0, numeros = [], input = '', vector = [], cant = 0;
+
+        input = prompt("Ingrese dos numeros(entre 1 y 1000000) separados por un espacio");
+
+        numeros = input.split(' ');
+        n1 = parseInt(numeros[0]);
+        n2 = parseInt(numeros[1]);
+
+        if (1 <= n1 && n2 <= 1000000) {
+            for (let i = n1; i <= n2; i++) {
+                vector[cant] = i;
+                cant++;
+            }
+            for (let i = 0; i < cant; i++) {
+                if (EsPrimo(vector[i])) {
+                    document.write(vector[i], " ");
+                }
+            }
+        } else {
+            document.write("Entre 1 y 1000000");
+        }
+    </script>
+</body>
+
+</html>
