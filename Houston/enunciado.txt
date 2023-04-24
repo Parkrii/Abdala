@@ -1,0 +1,3 @@
+Generar dos vectores  con  números aleatorios de N cantidad ingresada por el usuario
+Hacer una funcion que devuelva un vector que devuelva la verificación Houston.
+Mostrar los 3 vectores . Utilizar procedimiento

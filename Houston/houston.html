@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+
+<body>
+    <script>
+        let n = 0, v1 = [], v2 = [], v3 = [], total = 0;
+
+        n = parseInt(prompt("Ingrese que tan grande van a ser los vectores"));
+        for (let i = 0; i < n; i++) {
+            v1[i] = parseInt(Math.random() * 10);
+            v2[i] = parseInt(Math.random() * 10);
+        }
+        v3 = houston(v1, v2, n);
+        for (let i = 0; i < n; i++) {
+            total += v3[i];
+        }
+        document.write("El vector1 es:", v1, "<br>El vector2 es:", v2, "<br>El vector3 es:", v3, "<br>El Houston es:", total);
+    </script>
+</body>
+
+</html>
