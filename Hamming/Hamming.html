@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+
+<body>
+    <script>
+        let n = 0, n2 = 0, b = '', b2 = '', largo = 0, dife = 0;
+        n = parseInt(prompt("Ingrese un numero"));
+        b = n.toString(2);
+        n2 = parseInt(prompt("Ingrese otro numero"));
+        b2 = n2.toString(2);
+
+        if (b.length > b2.length) {
+            largo = b.length;
+            dife = largo - b2.length
+            for (let i = 0; i < dife; i++) {
+                b2 = 0 + b2;
+            }
+        } else {
+            largo = b2.length
+            dife = largo - b.length
+            for (let i = 0; i < dife; i++) {
+                b = 0 + b;
+            }
+        }
+        document.write("numero1: ", b, "<br>numero2: ", b2, "<br>Hamming: ", Hamming(b, b2, largo));
+    </script>
+</body>
+
+</html>
