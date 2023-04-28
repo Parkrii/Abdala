@@ -19,13 +19,13 @@
             largo = b.length;
             dife = largo - b2.length
             for (let i = 0; i < dife; i++) {
-                b2 = 0 + b2;
+                b2 = "0" + b2;
             }
         } else {
             largo = b2.length
             dife = largo - b.length
             for (let i = 0; i < dife; i++) {
-                b = 0 + b;
+                b = "0" + b;
             }
         }
         document.write("numero1: ", b, "<br>numero2: ", b2, "<br>Hamming: ", Hamming(b, b2, largo));
