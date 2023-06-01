@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+
+<body>
+    <script>
+        let A = [], n = 0, prom = 0, B = [], multi = 0, sum = 0, C = [];
+
+        n = parseInt(prompt("Ingrese las cantidad de elementos de A"));
+        for (let i = 0; i < n; i++) {
+            A[i] = parseInt(Math.random() * 32000);
+        }
+        prom = parseFloat(promedio(A));
+        B = mayores(A, prom);
+        multi = parseInt(multiplos(A));
+        sum = parseInt(suma(A));
+        C = pordos(A);
+
+        document.write("<br>Vector A: ", A, "<br>Promedio: ", prom, "<br>Vector B: ", B, "<br>Multiplos de 2 y 3: ", multi, "<br>Suma de todos: ", sum, "<br>Vector C: ", C);
+    </script>
+</body>
+
+</html>
