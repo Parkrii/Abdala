@@ -1,0 +1,4 @@
+Escriba una función que recupere las 3
+palabras más largas del titular de un periódico y las transforme en hashtags.
+Si varias palabras tienen la misma longitud, recupere la palabra que aparece
+primero.
