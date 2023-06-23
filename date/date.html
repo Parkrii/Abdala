@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="JS/funcion.js"></script>
+</head>
+
+<body>
+    <script>
+        let dia1, dia2, dia_año, dia_mes, dia_dia, dia3;
+        prompt("A continuacion te voy a pedir dos fechas para comparar cuantos años pasaron uno del otro");
+        dia_año = prompt("Ingrese año del 1");
+        dia_mes = prompt("Ingrese mes del dia 1");
+        dia_dia = prompt("Ingrese dia del dia 1");
+        dia_mes -= 1;
+        dia1 = new Date(dia_año, dia_mes, dia_dia);
+        dia_año = prompt("Ingrese año del 2");
+        dia_mes = prompt("Ingrese mes del dia 2");
+        dia_dia = prompt("Ingrese dia del dia 2");
+        dia_mes -= 1;
+        dia2 = new Date(dia_año, dia_mes, dia_dia);
+        prompt("A continuacion te voy a pedir una fecha para decir si es laborable o no")
+        dia_año = prompt("Ingrese año");
+        dia_mes = prompt("Ingrese mes");
+        dia_dia = prompt("Ingrese dia");
+        dia_mes -= 1;
+        dia3 = new Date(dia_año, dia_mes, dia_dia);
+
+
+        document.write("Pasaron ", año(dia1, dia2), " años de las 2 fechas ingresadas", "<br>La fecha ingresada es: ", laborable(dia3), "<br>Faltan: ", añoNuevo(), " dias para año nuevo", "<br>Somos campeones hace ", campeones(), " dias");
+    </script>
+</body>
+
+</html>
