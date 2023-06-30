@@ -7,13 +7,23 @@ class CEmpleado {
   }
 
   mostrarDatos() {
-    let n = this.direccion.search("WallStreet"), wall = "", fecha = new Date();
+    return `Datos:<br> ${this.nombre} ${this.anio_de_ingreso} `;
+  }
 
-    if (n != -1) {
-      wall = "WallStreet"
+  wallStreet() {
+    let n = this.direccion.search("WallStreet")
+
+    if (n == -1) {
+      this.direccion = "";
     }
 
-    return `Datos:<br> ${this.nombre} ${this.anio_de_ingreso} ${wall} <br>Sus anios de antiguedad es: ${fecha.getFullYear() - this.anio_de_ingreso}`;
+    return this.direccion;
+  }
+
+  aniosAntiguedad() {
+    let fecha = new Date();
+
+    return `<br>Sus anios de antiguedad es: ${fecha.getFullYear() - this.anio_de_ingreso}`
   }
 }
 
@@ -31,6 +41,6 @@ formulario.addEventListener('submit', function(event)
   const empleado = new CEmpleado(nombre, anio_de_ingreso, salario, direccion);
 
   const mostrar = document.getElementById('mostrar');
-  mostrar.innerHTML = empleado.mostrarDatos();
+  mostrar.innerHTML = empleado.mostrarDatos() + empleado.wallStreet() + empleado.aniosAntiguedad();
  }
 );
