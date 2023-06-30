@@ -1,5 +1,3 @@
-// class.js
-
 class CRectangulo {
   constructor(altura, longitud) {
     this.altura = altura;
